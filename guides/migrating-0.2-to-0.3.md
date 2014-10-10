@@ -102,7 +102,7 @@ All src code is now found in a src/ folder.  This will cause issues with any pat
 
 ### Scroller
 
-**`Scroller` no longer emits an `'edgetHit'` event.** Instead, it emits `'onEdge'` and `'offEdge'`. `'onEdge'` is fired when the scroller has reached an edge. `'offEdge'` is fired when the scroller was previously on an edge and has moved off of the edge. Both emit a data object with a `position` property.
+**`Scroller` no longer emits an `'edgeHit'` event.** Instead, it emits `'onEdge'` and `'offEdge'`. `'onEdge'` is fired when the scroller has reached an edge. `'offEdge'` is fired when the scroller was previously on an edge and has moved off of the edge. Both emit a data object with a `position` property.
 
 ### SequentialLayout
 
@@ -167,7 +167,7 @@ Here are a few major bug-fixes we're excited to release:
 
 **`Surface` now has a `toggleClass` method** that can be used to add/remove CSS classes from the `Surface`'s corresponding `<div>`. (The class is removed from the class list if present, and added if not present.)
 
-**The following `Surface ` methods are now chainable:** `setAttributes`, `setProperties`, `toggleClass`, `addClass`, `removeClass`, `setClasses`, `setContent`, `setOptions`, `setSize`.
+**The following `Surface ` methods are now chainable:** `setProperties`, `toggleClass`, `addClass`, `removeClass`, `setClasses`, `setContent`, `setOptions`, `setSize`.
 
 **HTML attributes can now be set on Surfaces.** You can either set attributes via the constructor, or via the `setAttributes` method:
 
